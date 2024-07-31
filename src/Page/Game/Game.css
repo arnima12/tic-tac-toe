@@ -1,3 +1,83 @@
-.game-bg {
-    background: linear-gradient(90deg, rgb(58, 42, 200), rgb(32, 135, 183));
+.main-wrapper {
+    background-image: url('/src/assets/game-bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.game-wrapper {
+    position: absolute;
+    top: 15%;
+    left: 28%;
+    width: 100vh;
+    overflow: hidden;
+}
+
+.game-content div:nth-child(1) {
+    position: absolute;
+    top: -5px;
+    right: 10px;
+}
+
+.game-content div:nth-child(2) {
+    position: absolute;
+    bottom: 20px;
+    left: 17%;
+    height: auto;
+    width: 20rem;
+}
+
+.back-home-btn {
+    background: linear-gradient(180deg, rgb(221, 157, 67), rgb(123, 87, 11), rgb(158, 112, 38), rgb(43, 30, 10));
+    width: 10rem;
+}
+
+.back-home-btn:hover {
+    animation: wiggle 0.3s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+
+    0%,
+    100% {
+        transform: rotate(-3deg);
+    }
+
+    50% {
+        transform: rotate(3deg);
+    }
+}
+
+@media screen and (max-width: 1094px) {
+    .game-content div:nth-child(2) {
+        left: 5%
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .game-content div:nth-child(1) img {
+        width: 10rem
+    }
+
+    .game-content div:nth-child(2) img {
+        width: 8rem;
+    }
+
+    .game-wrapper {
+        left: 8%
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .game-content div:nth-child(2) img {
+        width: 5rem;
+        height: 10rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .game-wrapper {
+        left: 5%
+    }
 }
