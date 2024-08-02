@@ -62,7 +62,7 @@ const Game = () => {
 
     return (
         <div className="main-wrapper">
-            <div className="game-wrapper text-center mt-8">
+            <div className="game-wrapper text-center">
                 {gameOver ? (
                     <div>
                         {isWinner ? (

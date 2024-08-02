@@ -1,17 +1,17 @@
 .main-wrapper {
     background-image: url('/src/assets/game-bg.png');
     background-size: cover;
-    background-position: center;
     height: 100vh;
     width: 100%;
 }
 
 .game-wrapper {
-    position: absolute;
-    top: 15%;
-    left: 28%;
-    width: 100vh;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .game-content div:nth-child(1) {
@@ -23,7 +23,7 @@
 .game-content div:nth-child(2) {
     position: absolute;
     bottom: 20px;
-    left: 17%;
+    left: 5%;
     height: auto;
     width: 20rem;
 }
@@ -51,33 +51,32 @@
 
 @media screen and (max-width: 1094px) {
     .game-content div:nth-child(2) {
-        left: 5%
+        left: 10px;
     }
 }
 
 @media screen and (max-width: 930px) {
     .game-content div:nth-child(1) img {
-        width: 10rem
+        width: 10rem;
+        height: 12rem;
     }
 
     .game-content div:nth-child(2) img {
+        width: 10rem;
+        height: 18rem;
+    }
+
+}
+
+@media screen and (max-width: 490px) {
+    .game-content div:nth-child(1) img {
         width: 8rem;
+        height: 8rem;
     }
 
-    .game-wrapper {
-        left: 8%
-    }
-}
-
-@media screen and (max-width: 760px) {
     .game-content div:nth-child(2) img {
-        width: 5rem;
-        height: 10rem;
+        width: 9rem;
+        height: 12rem;
     }
-}
 
-@media screen and (max-width: 480px) {
-    .game-wrapper {
-        left: 5%
-    }
 }
